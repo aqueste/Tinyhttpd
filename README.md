@@ -23,7 +23,7 @@ The role of each function:
      Unimplemented: Returns to the browser that the received HTTP request is not supported by the method.
      Recommended source code read order: main -> startup -> accept_request -> execute_cgi, familiar with the main workflow and then carefully look at the source of each function.
 
-Work process
+Work process:
 
      (1) server startup, in the specified port or random selection port binding httpd service.
      (2) received an HTTP request (in fact, listen to the port when the accpet), derived from a thread running accept_request function.
